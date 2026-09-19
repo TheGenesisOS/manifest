@@ -13,6 +13,12 @@
            sync-j="4"
            revision="yume" />
 
+  <remote  name="chararom"
+           fetch="https://github.com/CharaROMAndroid"
+           sync-c="true"
+           sync-j="4"
+           revision="hershey" />
+
   <!-- art -->
   <project path="art" name="art" groups="pdk" remote="genesis" />
 
@@ -111,5 +117,7 @@
   <project path="vendor/pixel/launcher" name="vendor_pixel_launcher" remote="genesis-gitlab" />
   <project path="vendor/pixel/sounds" name="vendor_pixel_sounds" remote="genesis-gitlab" />
   <project path="vendor/pixel/themepicker" name="vendor_pixel_themepicker" remote="genesis-gitlab" />
+  <!-- CharaROM's F-Droid Privileged Extension -->
+  <project name="F-DroidPrivilegedExtension" path="packages/apps/F-DroidPrivilegedExtension" remote="chararom"/>
 
 </manifest>
